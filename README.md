@@ -25,4 +25,4 @@ Como extra se añadio un botón de reproducción donde podras escuchar el audio 
 ## Proyecto web oficial:
 https://malvarezhe.github.io/Encriptador-de-texto/
 
-https://raw.githubusercontent.com/Malvarezhe/Encriptador-de-texto/master/img/Encriptador.jpg
+![Imagen del Sitio](https://raw.githubusercontent.com/Malvarezhe/Encriptador-de-texto/master/img/Encriptador.jpg)
