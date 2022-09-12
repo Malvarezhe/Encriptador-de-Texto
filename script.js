@@ -61,6 +61,7 @@ function copiarAlPortapapeles() {
     navigator.clipboard.writeText(texto); 
 }
 
+//Accion boton reproducir
 function reproducir() {
     var mensajesalida = textosalida.value;
     let msg = new SpeechSynthesisUtterance(); //Creo e instancio objeto de la clase Speech
