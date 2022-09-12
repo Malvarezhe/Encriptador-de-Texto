@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header>
+            <img src="./img/Logo.png" alt="Logo" class="logo">
+        </header>
+
+        <main>
+            <div class="titulo">
+                <h1>Encriptador de texto</h1>
+            </div>
+            <section class="ingrese-texto">
+                <textarea class="mensaje" name="" id="" cols="" rows="" placeholder="Ingrese texto aqui"></textarea>
+            </section>
+
+            <section class="exclamacion">
+                <label for="">❕ Solo letras minúsculas sin acentos y números</label>
+            </section>
+            
+            <section class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">🔒Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">🔓Desencriptar</button>
+                <img class="reproducir" src="./img/tocar.png" alt="Reproducir" onclick="reproducir()">
+            </section>
+        </main>
+
+        <section class="rectangulo">
+            <textarea name="" id="" cols="" rows="" class="textoresultado" placeholder="¡Ningún mensaje encontrado!"></textarea>
+            <button class="btoncopiar" onclick="copiarAlPortapapeles()">📄 Copiar</button>
+        </section>
+
+
+        <footer>
+            <section class="pie">
+                <section class="copi">
+                    <p>&copy Copyright Mauricio - Web Developer / 2022</p>
+                </section>
+
+                <section class="redes">
+                    <a href="https://github.com/Malvarezhe"><img src="./img/github.png" alt="" class="git"></a>
+                    <a href="https://www.linkedin.com/in/mauricio-alvarez-heredia"><img src="./img/linkedin.png" alt=""
+                            class="ln"></a>
+                </section>
+            </section>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

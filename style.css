@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-image: url("./img/Fondo9.jpg");
+}
+
+.contenedor {
+    width: 80%;
+    height: 90vh;
+    margin: 2rem auto;
+    border: 2px solid black;
+    background-image: url("./img/Fondo12.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+}
+
+/*Header---------------------------------*/
+
+header {
+  width: 7%;
+  
+  border-radius: 2rem;
+}
+
+header .logo {
+  margin: auto;
+  width: 50%;
+  margin-top: 1rem;
+  margin-left: 25%;
+}
+
+/*Main-----------------------------------*/
+main {
+  width: 55%;
+  height: 80%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main h1 {
+  width: 100%;
+  font-size: 300%;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
+  color: #11a1f8;
+}
+
+.ingrese-texto {
+  width: 100%;
+  height: 50%;
+}
+
+.mensaje {
+  font-size: 1.45rem;
+  border: 1px solid darkblue;
+  background-color: rgba(01,31,62, 0.5);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.mensaje:hover {
+  transform: scale(1.02);
+  transition: 1000ms;
+}
+
+.ingrese-texto textarea::placeholder { color: white}
+
+.exclamacion {
+  width: 100%;
+  height: 5%;
+  margin-top: 6%;
+
+}
+
+.exclamacion label {
+  font-size: 1.1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #11a1f8;
+  font-weight: 560;
+}
+
+.botones {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones button {
+  width: 30%;
+  height: 85%;
+  border-radius: 1.5rem;
+}
+
+/*** ESTILOS BOTÓN GROW ELLIPSE-1 ***/
+.btnEncriptar {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #ffcc00; 
+  color: darkblue; 
+  border-radius: 24px; 
+  margin: 0.5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btnEncriptar:hover {
+  transform: scale(1.10);
+  transition: 1000ms
+}
+
+.btnEncriptar::after {
+  content: "";
+  background-color: rgb(226, 226, 5); 
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.btnEncriptar:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+
+/*** ESTILOS BOTÓN GROW ELLIPSE-2 ***/
+.btnDesencriptar {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #11a1f8;
+  color: darkblue;
+  margin: 0.5rem;
+  border-radius: 24px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btnDesencriptar:hover {
+  transform: scale(1.10);
+  transition: 1000ms
+}
+
+.btnDesencriptar::after {
+  content: "";
+  background-color: #1085ce; 
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.btnDesencriptar:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+
+.reproducir {
+  width: 10%;
+  margin: 0.5rem;
+}
+
+.reproducir:hover {
+  transform: scale(1.10);
+  transition: 1000ms
+}
+
+/*Aside---------------------------------*/
+
+.rectangulo{
+  margin-top: 1.5%;
+  width:30%;
+  height: 85%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(01,31,62, 0.5);
+  border: 2px solid black;
+    border-radius: 32px;
+    -webkit-box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.8);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.8);
+}
+
+.textoresultado {
+  width: 90%;
+  height: 70%;
+  padding: 1rem;
+  background-color: rgba(1, 20, 39, 0.5);
+  font-size: 1.2rem;
+  color: white;
+  background-image: url("./img/Inspector.png");
+  background-repeat: no-repeat; 
+  background-position: 50% 80%;
+  background-size: 160px;
+  border-radius: 1.2rem;
+}
+
+.textoresultado::placeholder { 
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btoncopiar {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  width: 60%;
+  height: 10%;
+  cursor: pointer;
+  background: #013162; 
+  border: 2px solid white;
+  color: white; 
+  border-radius: 24px; 
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btoncopiar:hover {
+  transform: scale(1.10);
+  transition: 1000ms
+}
+
+.btoncopiar::after {
+  content: "";
+  background-color: #034281; 
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.btoncopiar:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+
+/*Footer------------------------------*/
+
+.pie {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(3, 41, 80, 0.5);
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.copi {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  color: white;
+  width: 70%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.redes {
+  width: 10%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.git, .ln{
+  width: 60%;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px) { 
+  .botones button {width: 35%; height: 65%;}
+  
+  .btnEncriptar {font-size: 1rem;}
+
+  .btnDesencriptar {font-size: 1rem;}
+
+
+@media screen and (max-width:414px) { 
+
+  main h1 {font-size: 200%;}
+  
+  .botones button {width: 45%; height: 55%;}
+  
+  .btnEncriptar {font-size: 0.5rem;}
+
+  .btnDesencriptar {font-size: 0.5rem;}
+
+  .btoncopiar {width: 70%; height: 10%; font-size: 0.7rem;}
+
+  .copi {font-size: 0.6rem; width: 70%; height: 90%;}
+}
+
+.textoresultado {width: 90%; height: 70%; padding: 0.5rem; font-size: 1rem; background-image: url("./img/Inspector.png");
+  background-repeat: no-repeat; background-position: 50% 70%; background-size: 80px;}
+
+  .mensaje {font-size: 1.1rem; padding: 0.7rem;}
+  
+  .ingrese-texto textarea::placeholder { color: white}
+  
+  .exclamacion {margin-top: 15%;}
+  
+  .exclamacion label {font-size: 0.4rem; font-weight: 550;}
+
+}
