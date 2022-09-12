@@ -17,18 +17,7 @@ function encriptacion(encriptado) {
                    ["i", "imes"], 
                    ["a", "ai"], 
                    ["o", "ober"], 
-                   ["u", "ufat"], 
-                   ["9", "nes"], 
-                   ["8", "ches"], 
-                   ["7", "ses"], 
-                   ["6", "sis"], 
-                   ["5", "fiv"], 
-                   ["4", "for"], 
-                   ["3", "tri"], 
-                   ["2", "to"], 
-                   ["1", "une"], 
-                   ["0", "zer"],
-                   [" ", "esp"]];
+                   ["u", "ufat"]];
 
     encriptado = encriptado.toLowerCase();
 
@@ -54,18 +43,7 @@ function desencriptar(desencriptado) {
                    ["i", "imes"], 
                    ["a", "ai"], 
                    ["o", "ober"], 
-                   ["u", "ufat"], 
-                   ["9", "nes"], 
-                   ["8", "ches"], 
-                   ["7", "ses"], 
-                   ["6", "sis"], 
-                   ["5", "fiv"], 
-                   ["4", "for"], 
-                   ["3", "tri"], 
-                   ["2", "to"], 
-                   ["1", "une"], 
-                   ["0", "zer"],
-                   [" ", "esp"]];
+                   ["u", "ufat"]];
 
     desencriptado = desencriptado.toLowerCase();
 
