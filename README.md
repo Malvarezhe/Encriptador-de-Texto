@@ -4,8 +4,10 @@ Aplicativo web para encriptar y desencriptar texto.
 
 Este es un proyecto resutante del primer challenge propuesto por Alura - Latam a través del programa Oracle Next Education para latinoamerica. 
 
-¿Cómo funciona el aplicativo? ¡Simple! Una vez ingreses a sitio web encontrarás un cuadro de texto donde introducirás el mensaje que quieres codificar. Para ejecutar esta tarea deberás dar clic en el botón encriptar de la parte inferior del sitio y al ejecutarlo aparecerá en el recuadro de la derecha donde inicialmente aparecía una imagen, un texto resultante con la codificación del texto que has ingresado. 
+¿Cómo funciona el aplicativo? ¡Simple! Una vez ingreses a sitio web encontrarás un cuadro de texto donde introducirás el mensaje que quieres codificar. Para ejecutar esta tarea deberás dar clic en el botón encriptar de la parte inferior del sitio y al ejecutarlo aparecerá en el recuadro de la derecha donde inicialmente aparecía una imagen, un texto resultante con la codificación del texto que has ingresado.
+
 El aplicativo también permite decodificar el texto que se generó haciendo clic en el botón 'Copiar' y luego pegándolo en el recuadro inicial. Una vez pegues el texto en el recuadro das clic en el botón desencriptar y obtendrás como resultado el texto original.
+
 Como extra se añadio un botón de reproducción donde podras escuchar el audio del texto que introduzcas en el recuadro principal. 
 
 ## ¿Quiénes intervienen en el desarrollo del aplicativo?
