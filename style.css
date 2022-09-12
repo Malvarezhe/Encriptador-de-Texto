@@ -21,7 +21,7 @@ body {
     border-radius: 1rem;
 }
 
-/*Header---------------------------------*/
+/*Header--------------------------------*/
 
 header {
   width: 7%;
@@ -315,7 +315,6 @@ main h1 {
 }
 
 /*Responsive*/
-
 @media screen and (max-width:768px) { 
   .botones button {width: 35%; height: 65%;}
   
